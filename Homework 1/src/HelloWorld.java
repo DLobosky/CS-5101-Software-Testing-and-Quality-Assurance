@@ -75,6 +75,7 @@ public class HelloWorld extends Application
 				{
 					case "I":
 					{
+						mod_text.setFill(Color.BLACK);
 						mod_text.setFont(Font.font("Times New Roman", FontPosture.ITALIC, 12));
 						fp.getChildren().addAll(mod_text);
 					}
@@ -82,6 +83,7 @@ public class HelloWorld extends Application
 					
 					case "B":
 					{
+						mod_text.setFill(Color.BLACK);
 						mod_text.setFont(Font.font("Times New Roman", FontWeight.BOLD, 12));
 						fp.getChildren().addAll(mod_text);
 					}
@@ -96,9 +98,16 @@ public class HelloWorld extends Application
 					
 					case "R":
 					{
+						mod_text.setFill(Color.BLACK);
 						fp.getChildren().addAll(mod_text_reverse);
 					}
 					break;
+					
+					default:
+					{
+						mod_text.setFill(Color.BLACK);
+						fp.getChildren().addAll(new Text("Please enter a proper letter"));
+					}
 					
 				}
 			}
