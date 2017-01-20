@@ -44,7 +44,7 @@ public class HelloWorld extends Application
 
    
 		Text mod_text = new Text("Hello World!");
-		Text mod_text2 = new Text("!dlroW olleH");
+		Text mod_text_reverse = new Text("!dlroW olleH");
 
         Scene myScene = new Scene(rootNode, 253, 50);
 
@@ -76,23 +76,31 @@ public class HelloWorld extends Application
 					case "I":
 					{
 						mod_text.setFont(Font.font("Times New Roman", FontPosture.ITALIC, 12));
+						fp.getChildren().addAll(mod_text);
 					}
 					break;
 					
 					case "B":
 					{
 						mod_text.setFont(Font.font("Times New Roman", FontWeight.BOLD, 12));
+						fp.getChildren().addAll(mod_text);
 					}
 					break;
 					
 					case "G":
 					{
 						mod_text.setFill(Color.GREEN);
+						fp.getChildren().addAll(mod_text);
 					}
 					break;
+					
+					case "R":
+					{
+						fp.getChildren().addAll(mod_text_reverse);
+					}
+					break;
+					
 				}
-				
-				fp.getChildren().addAll(mod_text);
 			}
 		});
 		
