@@ -18,12 +18,16 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
+import javafx.scene.text.*;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.*;
 
 /**@authors Dalton Lobosky and Jason Beard*/
 
 public class HelloWorld extends Application 
 {
-    @Override
+	@Override
     public void start(Stage myStage) 
 	{
 		//Setup the scene
@@ -39,9 +43,8 @@ public class HelloWorld extends Application
 		fp.setPrefWrapLength(200); // preferred width = 100
 
    
-		
-		Label text1 = new Label("Hello World! TEst 2");
-		Label text2 = new Label("!dlroW olleH");
+		Text mod_text = new Text("Hello World! Text");
+		Text mod_text2 = new Text("!dlroW olleH");
 
         Scene myScene = new Scene(rootNode, 253, 50);
 
@@ -50,7 +53,7 @@ public class HelloWorld extends Application
 		
 		
 		// Input Box
-		Label mod_label = new Label("Modifier:");
+		Label mod_label = new Label("Modifier:");		
 		TextField mod_textbox = new TextField();
 			
 		// Submit Button
@@ -64,8 +67,18 @@ public class HelloWorld extends Application
 			{
 				fp.getChildren().clear();
 				
-			
-				fp.getChildren().addAll(text1);
+				String x1 = mod_textbox.getText();
+				
+				switch(x1)
+				{
+					case "I":
+					{
+						mod_text.setFont(Font.font("Times New Roman", FontPosture.ITALIC, 12));
+					}
+					break;
+				}
+				
+				fp.getChildren().addAll(mod_text);
 			}
 		});
 		
