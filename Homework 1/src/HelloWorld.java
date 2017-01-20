@@ -43,7 +43,7 @@ public class HelloWorld extends Application
 		fp.setPrefWrapLength(200); // preferred width = 100
 
    
-		Text mod_text = new Text("Hello World! Text");
+		Text mod_text = new Text("Hello World!");
 		Text mod_text2 = new Text("!dlroW olleH");
 
         Scene myScene = new Scene(rootNode, 253, 50);
@@ -58,6 +58,8 @@ public class HelloWorld extends Application
 			
 		// Submit Button
 		Button submit = new Button("Submit");
+		
+		fp.getChildren().addAll(mod_text);
  		
 		hb.getChildren().addAll(mod_label, mod_textbox, submit);
 		
@@ -80,6 +82,12 @@ public class HelloWorld extends Application
 					case "B":
 					{
 						mod_text.setFont(Font.font("Times New Roman", FontWeight.BOLD, 12));
+					}
+					break;
+					
+					case "G":
+					{
+						mod_text.setFill(Color.GREEN);
 					}
 					break;
 				}
