@@ -91,6 +91,7 @@ public class HelloWorld extends Application
 					
 					case "G":
 					{
+						mod_text.setFont(Font.font("Times New Roman", 12));
 						mod_text.setFill(Color.GREEN);
 						fp.getChildren().addAll(mod_text);
 					}
@@ -100,6 +101,14 @@ public class HelloWorld extends Application
 					{
 						mod_text.setFill(Color.BLACK);
 						fp.getChildren().addAll(mod_text_reverse);
+					}
+					break;
+					
+					case "D":
+					{
+						mod_text.setFont(Font.font("Times New Roman", 12));
+						mod_text.setFill(Color.BLACK);
+						fp.getChildren().addAll(mod_text);
 					}
 					break;
 					
