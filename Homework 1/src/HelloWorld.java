@@ -76,6 +76,12 @@ public class HelloWorld extends Application
 						mod_text.setFont(Font.font("Times New Roman", FontPosture.ITALIC, 12));
 					}
 					break;
+					
+					case "B":
+					{
+						mod_text.setFont(Font.font("Times New Roman", FontWeight.BOLD, 12));
+					}
+					break;
 				}
 				
 				fp.getChildren().addAll(mod_text);
