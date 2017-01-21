@@ -42,15 +42,25 @@ public class HelloWorld extends Application
 		fp.setHgap(2);
 		fp.setPrefWrapLength(200); // preferred width = 100
 
-   
-		Text mod_text = new Text("Hello World!");
-		Text mod_text_reverse = new Text("!dlroW olleH");
-
-        Scene myScene = new Scene(rootNode, 253, 50);
+        Scene myScene = new Scene(rootNode, 400, 400);
 
 		rootNode.setCenter(fp);
 		rootNode.setTop(hb);
 		
+		
+		Text descriptionText = new Text("\nEnter desired modifier based on input letter:\n"
+				+ " B - Bold \n"
+				+ " D - Default \n"
+				+ " G - Green \n"
+				+ "  I  -  Italic \n"
+				+ " R - Reverse \n");
+		
+		descriptionText.setStyle("-fx-font: 12 arial;");
+		descriptionText.relocate(150 ,150);
+		fp.getChildren().add(descriptionText);
+		
+		Text mod_text = new Text("Hello World!");
+		Text mod_text_reverse = new Text("!dlroW olleH");
 		
 		// Input Box
 		Label mod_label = new Label("Modifier:");		
@@ -68,6 +78,7 @@ public class HelloWorld extends Application
 			@Override public void handle(ActionEvent e) 
 			{
 				fp.getChildren().clear();
+				fp.getChildren().add(descriptionText);
 				
 				String x1 = mod_textbox.getText();
 				
