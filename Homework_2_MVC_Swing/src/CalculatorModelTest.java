@@ -17,7 +17,7 @@ public class CalculatorModelTest
 	{
 		CalculatorModel test = new CalculatorModel();
 		int result = test.sub(5, 4);
-		assertEquals(2, result);
+		assertEquals(1, result);
 	}
 
 }
