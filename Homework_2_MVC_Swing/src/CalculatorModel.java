@@ -10,5 +10,16 @@ public class CalculatorModel
 	public int getAddAns()
 	{	
 		return ans_add;	
-	}	
+	}
+	
+	public int sub(int num1, int num2)
+	{		
+		return ans_sub = num1 - num2;
+	}
+	
+	public int getSubAns()
+	{	
+		return ans_sub;	
+	}
+	
 }
