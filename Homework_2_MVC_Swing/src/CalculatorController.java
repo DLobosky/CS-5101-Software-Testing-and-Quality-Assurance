@@ -76,9 +76,9 @@ public class CalculatorController
 			num1_div = theView.get_num1_div();
 			num2_div = theView.get_num2_div();
 			
-			theModel.add(num1_div, num2_div);
+			theModel.div(num1_div, num2_div);
 			
-			theView.set_ans_div(theModel.getAddAns());			
+			theView.set_ans_div(theModel.getDivAns());			
 		}
 	}	
 }

@@ -32,4 +32,14 @@ public class CalculatorModel
 		return ans_mult;	
 	}
 	
+	public int div(int num1, int num2)
+	{		
+		return ans_div = num1 / num2;
+	}
+	
+	public int getDivAns()
+	{	
+		return ans_div;	
+	}
+	
 }

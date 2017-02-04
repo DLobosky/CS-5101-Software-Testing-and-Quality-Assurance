@@ -27,5 +27,14 @@ public class CalculatorModelTest
 		int result = test.mult(5, 4);
 		assertEquals(20, result);
 	}
+	
+	@Test
+	public void testDiv() 
+	{
+		CalculatorModel test = new CalculatorModel();
+		int result = test.div(8, 4);
+		assertEquals(3, result);
+	}
+
 
 }
