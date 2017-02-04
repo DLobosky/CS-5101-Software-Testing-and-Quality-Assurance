@@ -9,6 +9,6 @@ public class CalculatorModelTest
 	{
 		CalculatorModel test = new CalculatorModel();
 		int result = test.add(4, 5);
-		assertEquals(10, result);
+		assertEquals(9, result);
 	}
 }
