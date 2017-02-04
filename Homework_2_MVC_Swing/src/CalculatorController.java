@@ -60,9 +60,9 @@ public class CalculatorController
 			num1_mult = theView.get_num1_mult();
 			num2_mult = theView.get_num2_mult();
 			
-			theModel.add(num1_mult, num2_mult);
+			theModel.mult(num1_mult, num2_mult);
 			
-			theView.set_ans_mult(theModel.getAddAns());
+			theView.set_ans_mult(theModel.getMultAns());
 		}
 	}	
 	

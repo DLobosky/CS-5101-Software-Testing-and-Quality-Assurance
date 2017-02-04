@@ -22,4 +22,14 @@ public class CalculatorModel
 		return ans_sub;	
 	}
 	
+	public int mult(int num1, int num2)
+	{		
+		return ans_mult = num1 - num2;
+	}
+	
+	public int getMultAns()
+	{	
+		return ans_mult;	
+	}
+	
 }

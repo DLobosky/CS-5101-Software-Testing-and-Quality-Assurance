@@ -19,5 +19,13 @@ public class CalculatorModelTest
 		int result = test.sub(5, 4);
 		assertEquals(1, result);
 	}
+	
+	@Test
+	public void testMult() 
+	{
+		CalculatorModel test = new CalculatorModel();
+		int result = test.mult(5, 4);
+		assertEquals(21, result);
+	}
 
 }
