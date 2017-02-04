@@ -1,6 +1,10 @@
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
+//Programmers: Dalton Lobosky and Jason Beard
+//Class: CS5101
+//Homework 2
+
 public class CalculatorView extends JFrame
 {
 	private JTextField num1_add  = new JTextField(10);
@@ -70,11 +74,6 @@ public class CalculatorView extends JFrame
 	{
 		return Integer.parseInt(num2_add.getText());
 	}
-	
-	//public int get_ans_add()
-//	{
-//		return Integer.parseInt(ans_add.getText());
-//	}
 	
 	public void set_ans_add(int ans)
 	{

@@ -1,3 +1,7 @@
+// Programmers: Dalton Lobosky and Jason Beard
+// Class: CS5101
+// Homework 2
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

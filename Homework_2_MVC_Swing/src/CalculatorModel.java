@@ -1,3 +1,7 @@
+// Programmers: Dalton Lobosky and Jason Beard
+// Class: CS5101
+// Homework 2
+
 public class CalculatorModel 
 {	
 	private int ans_add, ans_sub, ans_mult, ans_div;

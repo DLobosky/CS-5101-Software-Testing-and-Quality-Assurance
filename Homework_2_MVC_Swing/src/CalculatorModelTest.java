@@ -1,3 +1,7 @@
+// Programmers: Dalton Lobosky and Jason Beard
+// Class: CS5101
+// Homework 2
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -33,8 +37,6 @@ public class CalculatorModelTest
 	{
 		CalculatorModel test = new CalculatorModel();
 		int result = test.div(8, 4);
-		assertEquals(3, result);
+		assertEquals(2, result);
 	}
-
-
 }
