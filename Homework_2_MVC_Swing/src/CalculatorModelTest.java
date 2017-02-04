@@ -25,7 +25,7 @@ public class CalculatorModelTest
 	{
 		CalculatorModel test = new CalculatorModel();
 		int result = test.mult(5, 4);
-		assertEquals(21, result);
+		assertEquals(20, result);
 	}
 
 }

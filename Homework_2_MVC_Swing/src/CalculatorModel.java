@@ -24,7 +24,7 @@ public class CalculatorModel
 	
 	public int mult(int num1, int num2)
 	{		
-		return ans_mult = num1 - num2;
+		return ans_mult = num1 * num2;
 	}
 	
 	public int getMultAns()
